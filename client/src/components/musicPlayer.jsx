@@ -293,7 +293,7 @@ class MusicPlayer extends React.Component {
 
   getSongData (songId) {
     // GET request to fetch song data
-    $.get(`http://ec2-18-222-239-157.us-east-2.compute.amazonaws.com/songs/${songId}`, null, (data) => {
+    $.get(`http://localhost:6969/songs/${songId}`, null, (data) => {
       this.setState({ currentSongData: data, audio: new Audio('https://s3-us-west-1.amazonaws.com/streamboard98/music/' + data.songFile)});
       document.title = this.state.currentSongData.title;
     });

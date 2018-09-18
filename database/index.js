@@ -1,7 +1,11 @@
 const mongoose = require('mongoose');
 const data = require('../sampleData.js');
 
-const connection = mongoose.connect('mongodb+srv:ringo196:hackreactor@musicplayer-vp5xs.mongodb.net/test?retryWrites=true')
+const connection = mongoose.connect('mongodb+srv:ringo196:hackreactor@musicplayer-vp5xs.mongodb.net/test?retryWrites=true', function(){
+    /* Drop the DB */
+
+});
+
 
 console.log('MONGOOSE CONNECTED!@!@!@! GRRRREEAAAAT SUCCESSSSS!!!!!');
 
@@ -48,10 +52,13 @@ const save = (err, inputSong) => {
   }
 };
 
+// remove all data in the db
+// Song.remove({}, ()=> {})
+
   // // uncomment this to populate db
-  //   for (let i = 0; i < data.songs.length; i++) {
-  //     save(null, data.songs[i]);
-  //   }
+    // for (let i = 0; i < data.songs.length; i++) {
+    //   save(null, data.songs[i]);
+    // }
 
 module.exports.save = save;
 module.exports.getSong = getSong;
