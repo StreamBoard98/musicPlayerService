@@ -17,6 +17,7 @@ class AlbumModal extends React.Component {
     albumModal.removeChild(this.el);
   }
 
+
   render () {
     return ReactDOM.createPortal(
       this.props.children,
