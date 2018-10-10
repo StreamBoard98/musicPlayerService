@@ -276,11 +276,10 @@ class MusicPlayer extends React.Component {
   constructor (props) {
     super(props);
     this.state = {
-      currentSongData: { albumArt: 'RickAstley_WheneverYouNeedSomebody.png' },
-      currentSongId: 1,
+      currentSongData: {albumArt: null},
       play: false,
       showModal: false,
-      audio: new Audio('https://s3-us-west-1.amazonaws.com/streamboard98/music/RickAstley_NeverGonnaGiveYouUp.mp3')
+      audio: null,
     };
     this.playButtonHandler = this.playButtonHandler.bind(this);
     this.albumArtClickHandler = this.albumArtClickHandler.bind(this);

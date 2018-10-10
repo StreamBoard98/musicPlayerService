@@ -37,5 +37,3 @@ npm install -g webpack
 npm install
 ```
 
-# videoPlayerSkeletonService
-# videoPlayerSkeletonService
