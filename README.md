@@ -1,6 +1,6 @@
 # Project Name
 
-> Project description
+> This was a project wherein a huge amount of learning took place. At this point, I know a lot of what went on weren't the best practices. At the bare minimum, I would break down the main App file into smaller sub components which would make it a whole lot cleaner, and less of a huge unreadable mess (even though styled components does make it a little bit more readable). 
 
 ## Related Projects
 
